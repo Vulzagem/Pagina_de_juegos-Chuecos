@@ -15,15 +15,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<title> Análisis </title>
+	<title> Log In </title>
 	
 </head>
 <body>
 	<header>
 		<div class="header">
-			<h1 class="animate__animated animate__backInRight"><a href="index.html" id="titulo"> Gaming Today </a></h1> 
-			<h2 id="subTitulo" class="animate__animated animate__backInRight"> Playing all day, all days.</h2>
+			<h1 class="animate__animated animate__backInRight"><a href="index.html" id="titulo"> Gaming Today </a></h1>
+			<h2 id="subTitulo" class="animate__animated animate__backInRight"> Playing all day, all days. </h2>
 		</div>
+
 	</header>
 
 	<!-- Esta es la sección donde estan las demás áreas de la página -->
@@ -38,7 +39,7 @@
 			<hr>
 			<a href="logIn.html"> Log In </a>
 			<hr>
-			<ul>
+			<ul>	
 				<li><a href="consolas"> Consolas </a>
 					<ul> 
 						<li><a href="PS.html"> PS </a></li>
@@ -50,37 +51,53 @@
 				</ul>
 				<hr>
 			</div>
-			
-			<h3 id="subTitulo"> Análisis </h3>
 
-			<!-- Titulares y breves reseñas -->
+			<!-- Formulario de logueo -->
 
-			<div class="grid">
-				<div class="columna">
-					<h3>Cyberpunk 2077, análisis en PS4 y Xbox One: la otra cara de Night City</h3>
+			<div>
+				<form>
+					<fieldset>
+						<legend id="subTitulo"> Log In </legend>
+						<div> Nombre </div>
+						<input type="text" name="Nombre">
+						<div> Email </div>
+						<input type="email" name="Email">
+						<div> Contraseña </div>
+						<input type="password" name="Password">
 
-					<p>Analizamos la versión de PS4 y Xbox One de Cyberpunk 2077. Night City no muestra la misma cara que en el resto de plataformas. Falta trabajo.</p>
-				</div>
-				
-				<div>
-					<p> Por el camino pudimos ver (por fin) cómo lucía en consolas. Night Wire Special fue el marco elegido un 17 de noviembre para mostrar las versiones de Xbox One X y Xbox Series X. En el metraje ya dejaba entrever algunos problemas de rendimiento en la primera, mientras que la nueva generación parecía correr sin problemas. La compañía omitía la versión básica por ninguna razón concreta. La vida seguía. Una semana después hacían lo propio en PlayStation 4 Pro y PlayStation 5, esta vez sin la parafarnalia de la retransmisión. De nuevo, se omitía el modelo base; volvía a generarse el fantasma de siempre. </p>
-				</div>
-				
-				<div class="columna">
-					<p>No hay calificativos suficientes para describir la experiencia de juego en Xbox One. Es un port que hace creer al jugador que es un autómata. Sin pestañear, sin sentir, solo coger el mando y accionar botones. Cualquier persona que vea esta versión de Cyberpunk 2077 en directo sabe que es un auténtico desastre, independientemente de si tiene conocimientos técnicos. Los problemas que plantea son los antagonistas de cualquier juego de mundo abierto que se precie.</p>
-				</div>
-				
-				
-				
-				<iframe width="500" height="315" src="https://www.youtube.com/embed/RXLohSvTKpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+						<div> Sexo </div>
+						<select name="sexo">
+							<option value="elegir"> Elegir </option>
+							<option value="masculino"> Masculino </option>
+							<option value="femenino"> Femenino </option>
+						</select>
+
+
+						<div> ¿Desea recibir noticias por mail?</div>
+						<label for="acepta"> Si </label>
+						<input type="checkbox" name="acepta" value="Si">
+						<label for="rechaza"> No </label>
+						<input type="checkbox" name="rechaza" value="No">
+
+						<hr>
+
+						<input type="submit" name="submit" value="Aceptar">
+						<input type="reset" name="reset" value="Limpiar">
+
+
+
+
+					</fieldset>
+				</form>
 			</div>
 		</main>
-		
+
 		<footer> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </footer>
+
 	</body>
 	</html>
