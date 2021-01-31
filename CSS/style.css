@@ -90,7 +90,7 @@ header{
 }
 .parrafo{
 	width: 100%;
-	height: 180px;
+	/*height: 180px;*/
 	background-image: linear-gradient(to right, #3F82D9, #113E6B);
 }
 
